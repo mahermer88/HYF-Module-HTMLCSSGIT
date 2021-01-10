@@ -1,0 +1,49 @@
+Homework 07-01-2021 data: 3:00 Pm
+Week1
+Command Line Interface challenge
+
+#- Starting:
+*Run the Git Bash and looking for the directory and change it to desktop by: cd desktop
+*Then create a new folder with name 'hyf-html-exercises' by: mkdir hyf-html-exercises
+*Then change the directory again to the new folder by: cd hyf-html-exercises  
+*Then also create a new folder inside it by: mkdir week1
+*Then change the directory to last folder by: cd week1
+*Then create a text file for homework by: touch homework.txt
+
+
+1- How do I create a hidden file or folder? How do I display it in the CLI?
+
+*To hide any file or folder by command: attrib +h filename
+*To make it visible again,firstly we should know its name using the command: ls
+*We can see hidden folders or files, by pass a parameter to previous comnand by using the –a option: ls -a 
+*After we have known the hidden folder or file name, we can make it visible again by command: attrib -h filename
+*If it is a hidden folder, we can display its contents by command: ls -a
+*If it is hidden file,we can display its contents by command: cat filename
+
+
+2-How do I create multiple nested directories, like /c/Users/myusername/these/folders/are/just/for/fun?
+
+*We can create multiple nested directories, by adding a parameter -p to the comnand mkdir: mkdir -p 
+*In my case i did: mkdir -p desktop/hyf-html-exercises/week1/nesteddirectories/folderforfun
+
+3-How do I append a message to a file, without a newline character, so the output would be:
+first message
+second message
+
+*We can add text to file using command cat and its parameter > 
+*Therefore to edit our homework file, we use command: cat > homework.txt
+*Then write our text, press enter and ending by: ctrl + D
+*Every time, we used the previous way, it will be overwrite on the content of the file, so we need to add new line in the same file.
+*Therefore, we can use the same command cat but with another parameter, by: cat >> homework.txt
+*Then could write our new text for the new line, press enter and end by: ctrl + D
+*There are other options that went deeper in editing file. I saw them during searching but using them need more than my currently knowledge, such as command-line editor's vi, nano and joe. 
+
+
+#Source: 
+https://lifehacker.com/a-command-line-primer-for-beginners-5633909
+https://learntocodewith.me/command-line/unix-command-cheat-sheet/
+https://www.atlassian.com/git/tutorials/git-bash
+https://dev.to/axlblaze/git-bash-commonly-used-commands-22f7
+https://www.tech-recipes.com/rx/52474/hide-files-and-folders-in-windows-using-command-prompt/
+https://linuxconfig.org/cat-command
+https://www.howtoforge.com/faq/how-to-edit-files-on-the-command-line
