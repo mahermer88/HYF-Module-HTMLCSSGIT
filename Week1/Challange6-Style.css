@@ -1,0 +1,69 @@
+body {
+  background: url(media/Csschallenge7.jpg);
+  background-size: cover;
+  backface-visibility: hidden;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: block;
+  opacity: 0.9;
+}
+
+header h1 {
+  width: 90%;
+  margin: 5% auto;
+  text-align: center;
+  font-family: cursive, "sans-serif";
+  font-style: italic;
+  font-size: 5rem;
+  color: #ffd300;
+  text-shadow: 1px 1px 2px black, 2px 2px 25px #7c0a02, 0 0 7px darkblue;
+  padding: 10px;
+  background-image: url(media/Csschallenge6.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  border: 5px solid #7c0a02;
+  border-image-source: url(https://www.gifmania.co.uk/Technology-Animated-Gifs/Animated-Radar/Radar-53091.gif);
+  border-image-slice: 4;
+  border-image-width: 1.2;
+  border-image-outset: 0.5;
+}
+
+#wrap {
+  background: linear-gradient(235deg, #ffeba9, #cddbba, #ecbebe);
+  border: 5px ridge silver;
+  border-radius: 4em 1em;
+  margin: 5% 40%;
+  padding: 1%;
+  overflow: hidden;
+}
+.thepost {
+  padding: 3%;
+  border: 2px solid rgb(145, 141, 141);
+  border-radius: 2em 0.5em;
+}
+.posttitle {
+  margin-left: 20%;
+  font-family: fantasy;
+}
+.dateheader {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 0.8rem;
+  color: rgb(47, 53, 59);
+}
+.thepost:hover {
+  transform: scale(1.18);
+  transition: all 1s ease-in-out;
+}
+
+.post {
+  font-family: Bradley Hand, cursive;
+}
+
+.postfooter {
+  margin-left: 50%;
+  margin-bottom: 0%;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 0.9rem;
+}

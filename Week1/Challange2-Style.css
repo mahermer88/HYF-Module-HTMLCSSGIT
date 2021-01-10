@@ -1,0 +1,63 @@
+body {
+  background-color: black;
+  font-family: "Gill Sans", sans-serif;
+}
+
+#wrap {
+  background-color: #e2ac7f;
+  margin: 12% 22%;
+  padding: 1px 1px 25px 25px;
+}
+
+.box2 {
+  background-color: #f5f5dc;
+  margin: 1px 20%;
+  border: 5px dotted black;
+  text-align: center;
+}
+
+h1 {
+  margin: 0;
+  font-family: fantasy;
+  font-weight: 900;
+  font-size: 2.5em;
+  border-bottom: 5px dotted black;
+  font-style: italic;
+}
+
+.intro {
+  margin-left: 2%;
+  margin-right: 2%;
+  font-size: small;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: justify;
+}
+
+ul {
+  display: inline-table;
+  margin: 0 15%;
+  font-family: cursive;
+  font-size: small;
+  font-variant: normal;
+  font-stretch: expanded;
+  font-style: italic;
+  line-height: 1.2rem;
+}
+
+b {
+  font-weight: 800;
+  font-size: 1.5em;
+}
+
+li {
+  display: block;
+}
+
+a {
+  color: #0804e6;
+}
+
+.copyright {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: x-small;
+}
