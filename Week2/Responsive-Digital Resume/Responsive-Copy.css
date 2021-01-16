@@ -1,0 +1,312 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header {
+  width: 100%;
+  background-image: url(media/background.png);
+  border-bottom: 1px solid white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+}
+header h1 {
+  letter-spacing: 0.2rem;
+  font-size: 3rem;
+  color: gold;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 20px white, 2px 2px 25px silver, 2px 2px 20px #353333,
+    2px 2px 25px darkblue, 0px 0px 7px white;
+}
+header nav ul {
+  display: flex;
+  list-style: none;
+}
+header nav ul li {
+  padding: 10px;
+}
+header nav ul li img {
+  width: 60px;
+  height: 45px;
+  filter: grayscale(60%);
+  background-color: white;
+  border: 1px solid #b6cec9;
+  border-radius: 50%;
+  box-shadow: 1px 1px 20px white, 2px 2px 25px silver, 2px 2px 20px #353333;
+}
+/* main part*/
+.container {
+  background-image: url(media/background2.jpg);
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
+  padding: 15px;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 20px 10px;
+  background-color: #ffffff;
+  box-shadow: 5px 5px 15px rgb(0, 0, 0, 0.9);
+  border-radius: 18px;
+  transition: transform 1s ease;
+  overflow: hidden;
+}
+.card:hover {
+  transform: scale(1.1);
+  box-shadow: 5px 5px 15px rgb(0, 0, 0, 0.6);
+}
+.card-picture {
+  display: flex;
+  flex-basis: 25%;
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+.card-picture img {
+  width: 100%;
+  height: 20rem;
+  filter: grayscale(50%);
+  border: 1px solid silver;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+.card-title {
+  padding: 10px;
+  display: flex;
+  flex-basis: 25%;
+  justify-content: center;
+  font-size: 25px;
+  font-family: "Hachi Maru Pop", cursive;
+}
+.card-content {
+  display: flex;
+  flex-basis: 50%;
+}
+.card ul li {
+  list-style: none;
+}
+
+/* first card */
+.profile h2 {
+  color: rgb(255, 7, 110);
+  font-family: "Hachi Maru Pop", cursive;
+}
+.profile .card-content ul {
+  width: 100%;
+  text-align: center;
+  font-family: "Hachi Maru Pop", cursive;
+  font-size: 22px;
+  color: grey;
+}
+.profile .card-content ul li {
+  padding: 20px;
+}
+#emailadres {
+  background-color: rgb(255, 7, 110);
+  color: white;
+  border-bottom: 1px solid white;
+  cursor: pointer;
+}
+#phonenumber {
+  background-color: rgb(255, 7, 110);
+  color: white;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  cursor: pointer;
+}
+
+/* Second card */
+.education .card-content ul {
+  width: 100%;
+  font-size: 15px;
+}
+.education .card-content ul li {
+  padding: 10px;
+  background-color: rgb(255, 169, 56);
+  border-bottom: 1px solid white;
+  cursor: pointer;
+  color: rgb(68, 66, 66);
+}
+.education .card-content ul li:last-child {
+  border-bottom: 0px solid white;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+.sub-name{
+  font-size: 16px;
+  color: black;
+}
+
+/*third card*/
+.experience .card-content ul {
+  width: 100%;
+  text-align: justify;
+  font-size: 15px;
+}
+.experience .card-content ul li {
+  padding: 22px;
+  background-color: rgb(6, 180, 59);
+  border-bottom: 1px solid white;
+  color: rgb(68, 66, 66);
+  cursor: pointer;
+}
+.experience .card-content ul li:last-child {
+  border-bottom: 0px solid white;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+
+/*fourth card ;*/
+
+.skills .card-content{
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+ }
+.skill-card{
+  display: flex;
+  flex-direction: column;
+  background-color:rgb(0, 142, 189);
+  padding: 12px 5px;
+ }
+.skills .card-content h2 {
+  padding-bottom: 7px;
+  text-align: center;
+  font-family: hand;
+  font-size: 18px;
+  font-style: oblique;
+}
+.skills .card-content h3 {
+  padding-top: 5px;
+  font-size: 13px;
+}
+.Computer{
+  border-right:1px solid white;
+  border-left:1px solid white;
+}
+.power {
+  margin: 14px 0;
+  width: 100%;
+  background-color: rgb(211, 202, 202);
+  border: 1px solid rgb(224, 217, 217);
+}
+.Sk {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-align: right;
+}
+.Arabic {
+  width: 100%;
+  background-image: linear-gradient(to right,rgb(6, 180, 59) , rgb(57, 185, 96), rgb(137, 179, 150));
+}
+.English {
+  width: 80%;
+  background-image: linear-gradient(to right,rgb(6, 180, 59) , rgb(93, 184, 120), rgb(160, 189, 169));
+}
+.Dutch {
+  width: 65%;
+  background-image: linear-gradient(to right,rgb(6, 180, 59) , rgb(90, 180, 117), rgb(153, 179, 161));
+}
+.Mat {
+  width: 85%;
+  background-image: linear-gradient(to right, rgb(255, 169, 56) ,rgb(245, 182, 99) , rgb(247, 217, 179) );
+}
+.Photoshop {
+  width: 82%;
+  background-image: linear-gradient(to right, rgb(255, 169, 56) ,rgb(248, 196, 129) , rgb(247, 217, 179) );
+}
+.Html {
+  width: 40%;
+  background-image: linear-gradient(to right, rgb(255, 169, 56) ,rgb(247, 207, 156) , rgb(247, 217, 179) );
+}
+.Social {
+  width: 90%;
+  background-image: linear-gradient(to right,rgb(255, 7, 110) , rgb(248, 109, 167), rgb(247, 199, 219));
+}
+.Communication {
+  width: 80%;
+  background-image: linear-gradient(to right,rgb(255, 7, 110) , rgb(252, 164, 200), rgb(247, 199, 219));
+}
+.Organisational {
+  width: 74%;
+  background-image: linear-gradient(to right,rgb(255, 7, 110) , rgb(247, 171, 203), rgb(247, 199, 219));
+}
+
+
+footer{
+    width: 100%;
+    background-image: url(media/background.png);
+    border-top: 1px solid white;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    padding: 10px 100px;
+}
+  footer p{
+  font-size: 23px;
+  margin: 5px ;
+  color:white;
+  font-family: 'Caveat', cursive;
+  text-shadow: 1px 1px 5px black;
+}
+
+/*use media queries: for responsive design*/
+
+@media (max-width: 600px) {
+  header {
+    display: flex;
+    justify-content:space-between;
+    padding: 5px 3px;
+  }
+  header h1 {
+    margin-top: 10px;
+    letter-spacing: 0;
+    font-size: 1.2rem;
+  }
+  header nav ul li {
+    padding: 2px;
+  }
+  header nav ul li img {
+    width: 35px;
+    height: 25px;
+  }
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    padding: 0;
+  }
+.card{
+  margin: 10px;
+}
+.card .card-picture img{
+  height:15rem;
+}
+.card .card-content ul li {
+  padding: 10px;
+}
+footer{
+     text-align: center;
+    align-items: center;
+    padding: 2px;
+}
+}
+
+
+@media (min-width: 600px) and (max-width: 1024px) {
+  header h1 {
+    margin-top: 10px;
+    letter-spacing: 0.1;
+    font-size: 1.8rem;
+  }
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    padding: 0;
+  }
+}
