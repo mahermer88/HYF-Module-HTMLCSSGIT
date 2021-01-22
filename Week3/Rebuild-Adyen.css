@@ -42,7 +42,7 @@ header ul li:hover{
 margin-left: 110px;
 }
 
-/*                     */
+/*first-part: Intro part some text and video*/
 
 .first-part .card {
     display: flex;
@@ -59,13 +59,14 @@ margin-left: 110px;
     padding-top: 25px;   
 }
 
-/*   */
+/*second-part: Intro part with logos of partners*/
 .second-part  {
     display: flex;
+    flex-direction: row;
     padding: 25px 0;
  }
 
-/*       */
+/*third-part: Intro part with partnership-info*/
 .third-part{
     padding: 90px 0;
 }
@@ -79,7 +80,22 @@ margin-left: 110px;
     border-bottom: 1px solid rgb(40, 197, 40);
 }
 
-/*       */
+/*fourth-part: Intro part with some text*/
+.fourth-part .card{
+    padding: 90px 350px;
+    margin-top: -50px;
+}
+.fourth-part .card-content p{
+    font-size: 18px;
+    margin-bottom: 20px;
+ }
+ .fourth-part a{
+     padding-bottom: 10px;
+ }
+.fourth-part a:hover{
+    border-bottom: 1px solid rgb(40, 197, 40);
+}
+
 
 
 /* use media queries: for responsive design*/
@@ -103,6 +119,10 @@ margin-left: 110px;
 }
 .second-part img {
 width: 80%;
+}
+.fourth-part .card{
+    padding: 9px 0px;
+    margin-top: 0px;
 }
 /*
 .partnership-info{
