@@ -26,25 +26,34 @@ main .row .col{
     margin:0px;
     padding: 0px;
 }
-
 a{
+    font-size: 15px;
+    font-weight: 700;
     padding-bottom: 10px;
-    
 }
 a:hover{
    border-bottom: 1px solid rgb(40, 197, 40);
 }
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+.card .card-content{
+font-size: 18px;
+}
 
-/*                     */
+
+/*header and nav-menu*/
 .brand-logo{
-margin: 18px auto;
+   margin: 18px auto;
 }
 header{
-    border:3px solid white;
+   border:3px solid white;
 }
 header ul li .material-icons,
-header ul li .btn {
-margin: 0;
+header ul li .btn {  
+   margin: 0;
 }
 header ul li:hover{
     border-top: 3px solid rgb(40, 197, 40);
@@ -53,21 +62,16 @@ header ul li a:hover{
     border-bottom: none;
  }
 .nav-menu{
-margin-left: 110px;
+ margin-left: 110px;
 }
 
 /*first-part: Intro part some text and video*/
-
 .first-part .card {
-    display: flex;
-    flex-direction: column;
     margin-top: 90px;
-    padding: 0px;
 }
-.first-part .card .card-content  {
+.first-part .card .card-content {
     padding: 0px;
-    padding-right: 100px;
-    font-size: 20px;
+    padding-right: 120px;
 }
 .column-buttons{
     padding-top: 25px;   
@@ -84,28 +88,22 @@ margin-left: 110px;
 .third-part{
     padding: 90px 0;
 }
-.third-part .card-content p{
-    font-size: 18px;
- }
+
 /*fourth-part: Intro part with some text*/
 .fourth-part .card{
     padding: 90px 350px 50px 350px ;
-    margin-top: -50px;
+    margin-top: -80px;
 }
 .fourth-part .card-content p{
-    font-size: 18px;
     margin-bottom: 20px;
 }
 /*fifth-part: Intro part with Online payments info*/
-.fifth-part .card{
-   display: flex;
-   flex-direction: column;
+.fifth-part .item-left{
    margin-right: 30px;
 }
 .fifth-part .card .card-content{
    padding-left: 0%;
    padding-right: 40px;
-   font-size: 18px;
    margin-bottom: 20px;
  }
  
@@ -113,21 +111,27 @@ margin-left: 110px;
 .sixth-part, .sixth-part .card, .sixth-part .card .card-content{
     background-color: #031033 ;
     color: white;
-    padding: 0 20px 10px 0;
-    display: flex;
-    flex-direction: column;
+    padding: 0 30px 10px 0;
 }
 .sixth-part .item-right{
     margin: 60px 0px 0px 30px;
-    padding: 30px 50px 10px 0;
+}
+.sixth-part .item-right .card-content{
+    padding: 30px 60px 10px 0;
     font-size: 20px;
+}
+/*seventh-part: Intro part with test account */
+.seventh-part, .seventh-part .card, .seventh-part .card-content a{
+padding: 15px;
 }
 
 
 /* use media queries: for responsive design*/
 
 @media (max-width: 600px) {
-
+.brand-logo{
+    margin-left: 10px;
+}
 .first-part .card {
     margin-top: 0px;
 }
@@ -150,22 +154,53 @@ width: 80%;
     padding: 9px 0px;
     margin-top: 0px;
 }
+.fourth-part a{
+    font-size: 15px;
+}
 .fifth-part .card{
     margin-right: 0px;
 }
+.sixth-part .item-right, .sixth-part .item-right .card-content {
+    margin: 0;
+    padding: 0;
+}
 }
 
-/*
-    border:1px solid black;
 
 
-/*use media queries: for responsive design
+/*use media queries: for responsive design*/
 
-@media (max-width: 600px) {
-    
-  }
-  
-  
   @media (min-width: 600px) and (max-width: 1024px) {
-    
+ .brand-logo{
+        margin-left: 50px;
+    }
+    .first-part .card {
+        margin-top: 0px;
+        padding: 0;
+    }
+    .first-part .card h1{
+        margin-top: 0px;
+        font-size: 60px;
+     }
+    .first-part .card .card-content  {
+        padding-right: 60px;
+        font-size: 18px;
+    }
+    .column-buttons .btn{
+        margin-top: 11px;
+        padding: 0 20px;   
+    }
+    .second-part img {
+        width: 80%;
+     }
+     .fourth-part .card{
+        padding: 20px 165px;
+     }
+     .sixth-part, .sixth-part .card, .sixth-part .card .card-content{
+        padding: 0 3px 1px 0;
+    }
+     .sixth-part .item-right, .sixth-part .item-right .card-content {
+        margin: 0;
+        padding: 0;
+    }
   }
