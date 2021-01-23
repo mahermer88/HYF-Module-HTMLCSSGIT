@@ -82,7 +82,7 @@ margin-left: 110px;
 
 /*fourth-part: Intro part with some text*/
 .fourth-part .card{
-    padding: 90px 350px;
+    padding: 90px 350px 50px 350px ;
     margin-top: -50px;
 }
 .fourth-part .card-content p{
@@ -95,6 +95,27 @@ margin-left: 110px;
 .fourth-part a:hover{
     border-bottom: 1px solid rgb(40, 197, 40);
 }
+/*fifth-part: Intro part with Online payments info*/
+.fifth-part .card{
+   display: flex;
+   flex-direction: column;
+   margin-right: 30px;
+}
+.fifth-part .card .card-content{
+   padding-left: 0%;
+   padding-right: 40px;
+   font-size: 18px;
+   margin-bottom: 20px;
+ }
+ .fifth-part a{
+     padding-bottom: 10px;
+     
+ }
+.fifth-part a:hover{
+    border-bottom: 1px solid rgb(40, 197, 40);
+}
+
+
 
 
 
@@ -124,86 +145,22 @@ width: 80%;
     padding: 9px 0px;
     margin-top: 0px;
 }
-/*
-.partnership-info{
-    padding: 70px 0;
+.fifth-part .card{
+    margin-right: 0px;
 }
-.partnership-info .card{
-    border:1px solid black;
-   padding: 0 50px;
 }
 
-.payments-info {
-   border:1px solid black;
-}
 /*
-.payments-info .card{
-    display: flex;
-    flex-direction: column;
-    
-    align-content: center;
-    justify-content: center;
-align-items: center;
-align-self: center;
     border:1px solid black;
-   
-
-}
 
 
 /*use media queries: for responsive design
 
 @media (max-width: 600px) {
-    header {
-      display: flex;
-      justify-content:space-between;
-      padding: 5px 3px;
-    }
-    header h1 {
-      margin-top: 10px;
-      letter-spacing: 0;
-      font-size: 1.2rem;
-    }
-    header nav ul li {
-      padding: 2px;
-    }
-    header nav ul li img {
-      width: 35px;
-      height: 25px;
-    }
-    .container {
-      display: grid;
-      grid-template-columns: 1fr;
-      justify-content: center;
-      padding: 0;
-    }
-  .card{
-    margin: 10px;
-  }
-  .card .card-picture img{
-    height:15rem;
-  }
-  .card .card-content ul li {
-    padding: 10px;
-  }
-  footer{
-       text-align: center;
-      align-items: center;
-      padding: 2px;
-  }
+    
   }
   
   
   @media (min-width: 600px) and (max-width: 1024px) {
-    header h1 {
-      margin-top: 10px;
-      letter-spacing: 0.1;
-      font-size: 1.8rem;
-    }
-    .container {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      justify-content: center;
-      padding: 0;
-    }
+    
   }
