@@ -155,7 +155,7 @@ p {
 }
 #grid-flex .grid-item:first-child {
   /*grid-column: 1 / 3;*/
-  flex-basis: 46%;
+  flex-basis: 45%;
 }
 
 /*Animation using transition*/
