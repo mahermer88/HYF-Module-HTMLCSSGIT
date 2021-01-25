@@ -1,5 +1,7 @@
-/*For this week, i tried to rebuild the homepage of Ayden. I use only my css styleshhet but then i used CSS framework of materialize. 
-The combination between these sources was harder than i thought, it is clear that i need long time to learn and practice */
+
+
+/*For this week, i tried to rebuild the homepage of Ayden. I use firstly my css styleshhet but then i used CSS framework of materialize step by step with curses' videos. 
+The combination between these sources was harder than i thought. it is clear that i need long time to learn and practice framworks*/
 
 body{
     margin: 0;
@@ -145,7 +147,7 @@ padding: 15px;
     font-size: 18px;
 }
 .column-buttons .btn{
-    padding: 0 40px;   
+    padding: 0 60px;   
 }
 .second-part img {
 width: 80%;
