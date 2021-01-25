@@ -214,10 +214,10 @@ p {
     height: 850px;
   }
   #grid-floats .grid-item:first-child {
-    max-width: 60%;
+    max-width: 59%;
   }
   #grid-flex .grid-item {
-    flex-basis: 28%;
+    flex-basis: 29%;
   }
   #grid-flex .grid-item:first-child {
     flex-basis: 60%;
